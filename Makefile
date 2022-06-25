@@ -495,8 +495,8 @@ ifneq ($(CROSS_COMPILE),)
 
 
 
-CLANG_TRIPLE=aarch64-linux-gnu-
-
+ CLANG_TRIPLE=aarch64-linux-gnu-
+CLANG_TRIPLE=/home/grahame/toolchains/proton-clang-13-clang/bin/aarch64-linux-gnu-
 
 
 
