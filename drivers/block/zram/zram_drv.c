@@ -66,7 +66,15 @@ static DEFINE_MUTEX(zram_index_mutex);
 
 static int zram_major;
 static struct zram *zram_devices;
+<<<<<<< HEAD
 static const char *default_compressor = "lzo-rle";
+=======
+ #if IS_ENABLED(CONFIG_CRYPTO_LZ4)
+static const char *default_compressor = "lz4";
+#else
+static const char *default_compressor = "lz4";
+#endif
+>>>>>>> b66e6078f... securities & zram
 
 /* Module params (documentation at end) */
 static unsigned int num_devices = 1;
